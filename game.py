@@ -207,3 +207,12 @@ class Breakout(Tk):
 
     def mouseMove(self, event):
         self.platform.update(self.canvas, event.x, self.MARGINS, self.width - self.MARGINS - Platform.WIDTH)
+
+
+def main():
+    game = Breakout()
+    game.display()
+
+
+if __name__ == "__main__":
+    main()
